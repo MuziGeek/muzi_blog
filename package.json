@@ -25,6 +25,6 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-symbols-count-time": "^0.7.1",
-    "hexo-util": "^2.4.0"
+    "hexo-util": "^3.3.0"
   }
 }
