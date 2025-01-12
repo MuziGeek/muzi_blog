@@ -6,6 +6,7 @@ zh-CN:
     travellings: 开往
     webstack: 网址
     friends: 友達
+    works: 作品
 
 zh-HK:
   menu:
@@ -13,6 +14,7 @@ zh-HK:
     travellings: 開往
     friends: 友達
     webstack: 網址
+    works: 作品
 
 zh-TW:
   menu:
@@ -20,6 +22,8 @@ zh-TW:
     travellings: 開往
     friends: 友達
     webstack: 網址
+    works: 作品
+
 
 en:
   menu:
@@ -27,6 +31,8 @@ en:
     travellings: Travellings
     webstack: Web Stack
     friends: Friends
+    works: Works
+
 
 ja:
   menu:
@@ -34,3 +40,5 @@ ja:
     travellings: 旅行
     friends: 友達
     webstack: ウェブスタック
+    works: さくひん
+

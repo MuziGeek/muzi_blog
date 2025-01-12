@@ -11,13 +11,18 @@ open_graph:
 
 menu:
   home: / || home
+  about: 
+    default: /about/ || user
+    works: /works/ || moon
   posts:
     default: / || feather
     archives: /archives/ || list-alt
     categories: /categories/ || th
     tags: /tags/ || tags
-  friends: /friends/ || heart
-  links: /links/ || magic
+  links:  
+    default: /links/ || magic
+    friends: /friends/ || heart
+    webstack: /webstack/ || star
 
 # Social Links
 # Usage: `Key: permalink || icon || color`
@@ -31,7 +36,7 @@ social:
   zhihu: https://www.zhihu.com/people/mu-zi-jin-you-er-gun || zhihu || "#1e88e5"
   music: https://music.163.com/#/user/home?id=3317014130 || cloud-music || "#e60026"
   weibo: https://weibo.com/easymuzi || weibo || "#ea716e"
-  # about: https://about.me/amehime || address-card || "#3b5998"
+  about: https://about.me/amehime || address-card || "#3b5998"
   email: mailto:mz@easymuzi.cn || envelope || "#55acd5"
   #facebook: https://www.facebook.com/yourname || facebook
   #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -44,7 +49,17 @@ footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
   since: 2010
   count: true
-  beian: true
+   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
+  beian:
+    enable: true
+    # The id of ICP beian.  e.g. 京ICP备1919081145号-1
+    icp: 豫ICP备2024099312号
+    # The id of gongan beian.  e.g. 京公安网备11451401919810号
+    gongan_id: 豫公网安备41052602000569号
+    # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
+    gongan_icon_url: /images/beian.png
+
+ 
 
 post:
   count: true

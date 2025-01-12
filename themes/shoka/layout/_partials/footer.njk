@@ -24,15 +24,21 @@
   </div>
   {%- endif %}
 
-   {%- if theme.footer.beian %}
-  <div class="beian">
-    <span >
-      <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2024099312号
-    </span>
-  </div>
-    <p><img src="/images/beian.png" style="width: 20px;display: inline-block;vertical-align: middle;" /> <a style="display: inline-block;margin-left:5px;vertical-align: middle;" href="https://beian.mps.gov.cn/#/query/webSearch?code=41052602000569" rel="noreferrer" target="_blank">豫公网安备41052602000569号</a></p>
+  {%- if theme.footer.beian.enable %}
+    <div class="beian">
+      <a href="https://beian.miit.gov.cn" target="_blank">{{theme.footer.beian.icp}}</a>
+      <p>
+      {%- if theme.footer.beian.gongan_icon_url %}
+        <img src="{{ url_for(theme.footer.beian.gongan_icon_url) }}" style="width: 20px;display: inline-block;vertical-align: middle;" alt="">
+      {%- endif %}
+      {%- if theme.footer.beian.gongan_id %}
+        <a style="display: inline-block;margin-left:5px;vertical-align: middle;" href="https://beian.mps.gov.cn/#/query/webSearch?code=41052602000569" rel="noreferrer" target="_blank">
+          {{theme.footer.beian.gongan_id}}
+        </a>
+      {%- endif %}
+      </p>
+    </div>
   {%- endif %}
-
 
   {%- if theme.footer.powered %}
   <div class="powered-by">
